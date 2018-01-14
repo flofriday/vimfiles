@@ -61,7 +61,7 @@ endif
 if has('gui_running')
 	colorscheme monokai
 	set background=dark
-	set guifont=Consolas:h12
+	set guifont=Inconsolata:h14:b
 endif
 
 "Allwas the english language
@@ -74,7 +74,8 @@ set clipboard+=unnamedplus
 set number
 set relativenumber
 
-"Change font size with CTRL++ and CTRL+-
+"Disable bell
+set belloff=all
 
 "Setup plugins via vim-plug
 call plug#begin('~vim/plugged')
@@ -89,3 +90,4 @@ set noshowmode
 if !has('gui_running')
 	set t_Co=256
 endif
+
