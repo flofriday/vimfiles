@@ -1,2 +1,8 @@
 
 init.vim~
+autoload/fontzoom.vim~
+autoload/.fontzoom.vim.un~
+.vimrc.un~
+vimrc~
+~vim/plugged/
+*.swp
