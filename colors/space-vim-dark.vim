@@ -4,6 +4,7 @@
 " URL: https://github.com/liuchengxu/space-vim-dark
 "
 " Note: Inspired by spacemacs-dark theme
+" Note: Modified by flofriday to disable italic comments
 
 hi clear
 
@@ -207,7 +208,8 @@ call s:hi('Tag'          , 161 , ''  , 'None' , 'None')
 call s:hi('Title'        , 176 , ''  , 'None' , 'None')
 call s:hi('StorageClass' , 178 , ''  , 'bold' , 'bold')
 
-call s:hi('Comment'   , 30 , ''    , 'None' , 'italic')
+"call s:hi('Comment'   , 30 , ''    , 'None' , 'italic')
+call s:hi('Comment'   , 30 , ''    , 'None' , 'None')
 call s:hi('Visual'    , '' , s:bg3 , 'None' , 'None')
 call s:hi('VisualNOS' , '' , s:bg3 , 'None' , 'None')
 
