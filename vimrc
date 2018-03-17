@@ -121,7 +121,7 @@ else
 endif
 
 let g:lightline = {
-    \ 'colorscheme': 'wombat',
+    \ 'colorscheme': 'Dracula',
     \ 'active': {
     \   'right': [ [ 'lineinfo' ],
     \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
