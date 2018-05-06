@@ -62,7 +62,9 @@ endif
 language messages en
 
 "Highlight current line
-set cursorline
+if has('gui_running')
+    set cursorline
+endif
 
 "Set relativ numbers
 set number
@@ -84,6 +86,9 @@ Plug 'sheerun/vim-wombat-scheme'
 Plug 'joshdick/onedark.vim'
 Plug 'liuchengxu/space-vim-dark'
 
+"Rust
+Plug 'rust-lang/rust.vim'
+
 "Functions
 Plug 'scrooloose/nerdtree'
 "Plug 'kien/ctrlp.vim'
@@ -102,7 +107,6 @@ if has('gui_running')
 	set guifont=Ubuntu_Mono:h12
 else
 	set background=dark
-	colorscheme solarized
 endif
 
 "draw line after 80 chars
@@ -150,3 +154,20 @@ let g:lightline = {
     \ },
     \ }
 
+" Only do this part when compiled with support for autocommands.
+if has("autocmd")
+    " Use filetype detection and file-based automatic indenting.
+    filetype plugin indent on
+
+    " Use actual tab chars in Makefiles.
+    autocmd FileType make set tabstop=8 shiftwidth=8 softtabstop=0 noexpandtab
+endif
+
+" For everything else, use a tab width of 4 space chars.
+set tabstop=4       " The width of a TAB is set to 4.
+                    " Still it is a \t. It is just that
+                    " Vim will interpret it to be having
+                    " a width of 4.
+set shiftwidth=4    " Indents will have a width of 4.
+set softtabstop=4   " Sets the number of columns for a TAB.
+set expandtab       " Expand TABs to spaces.
