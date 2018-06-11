@@ -106,7 +106,7 @@ call plug#end()
 if has('gui_running')
 	set background=dark
 	"colorscheme monokai
-	colorscheme space-vim-dark
+	colorscheme one
 	set guifont=Ubuntu_Mono:h12
 else
 	set background=dark
@@ -128,7 +128,7 @@ else
 endif
 
 let g:lightline = {
-    \ 'colorscheme': 'Dracula',
+    \ 'colorscheme': 'one',
     \ 'active': {
     \   'right': [ [ 'lineinfo' ],
     \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
