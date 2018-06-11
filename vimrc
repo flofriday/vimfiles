@@ -58,6 +58,9 @@ endif
 " PERSONAL EDITS STARTS HERE 
 " -----------------------------------------
 
+" Dissable swap file 
+set noswapfile
+
 "Allwas the english language
 language messages en
 
